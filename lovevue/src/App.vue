@@ -6,8 +6,8 @@ import List from './List.vue'
     },
     data(){
       return{
-        pageTitle:"NavBar",
-        myNotes:[
+        pageTitle:"My first vue",
+        data: [
          {
           id:1,
           title: "Menu"
@@ -29,5 +29,5 @@ import List from './List.vue'
 </script>
 <template>
   <h1>{{pageTitle}}</h1>
-  <List :list_data="myNotes"/>
+  <List :data="data"/>
 </template>
